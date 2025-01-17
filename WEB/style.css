@@ -1,0 +1,101 @@
+/* Сброс стилей для body */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Полная высота страницы */
+    background-image: url('9ad1a6fd72a5f3bccc953cb17c9585e4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    color: #f0f0f0;
+    position: relative; /* Для позиционирования дочерних элементов */
+    text-align: center; /* Центрирование текста */
+}
+
+/* Центрирование калькулятора */
+.sloy {
+    background-color: #222222;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    margin: 0 auto; /* Горизонтальное центрирование */
+    margin-top: 100px; /* Отступ сверху */
+    width: 300px; /* Ширина калькулятора */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Поле вывода результата */
+#result {
+    background-color: #333333;
+    color: #008cff;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: right;
+    width: 100%; /* Полная ширина внутри sloy */
+}
+
+/* Контейнер для кнопок */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 100%; /* Кнопки занимают всю ширину sloy */
+}
+
+/* Стили кнопок */
+.my_but {
+    background-color: #444444;
+    color: #ffffff;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    height: 60px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.my_but:hover {
+    background-color: #555555;
+    color: #0011ff;
+}
+
+/* Кнопка = и другие специальные */
+.execute {
+    grid-column: span 2; /* Растянуть на два столбца */
+}
+
+.primary {
+    background-color: #0011ff;
+}
+
+.secondary {
+    background-color: #0011ff;
+}
+
+/* GitHub-ссылка */
+.github-link {
+    font-size: 16px;
+    color: #0011ff;
+    text-decoration: none;
+}
+
+.github-link:hover {
+    color: #ffffff;
+}
+
+/* Текст внизу страницы */
+.footer-text {
+    position: absolute; /* Прижимаем текст к низу страницы */
+    bottom: 10px; /* Отступ от нижнего края */
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <div class="sloy">
+        <!-- Поле вывода результата -->
+        <div id="result">0</div>
+        <!-- Контейнер для кнопок -->
+        <div class="buttons">
+            <button id="btn_op_clear" class="my_but secondary">AC</button>
+            <button id="btn_op_sign" class="my_but secondary">+/-</button>
+            <button id="btn_op_percent" class="my_but secondary">%</button>
+            <button id="btn_op_div" class="my_but primary">/</button>
+            <button id="btn_digit_7" class="my_but">7</button>
+            <button id="btn_digit_8" class="my_but">8</button>
+            <button id="btn_digit_9" class="my_but">9</button>
+            <button id="btn_op_mult" class="my_but primary">x</button>
+            <button id="btn_digit_4" class="my_but">4</button>
+            <button id="btn_digit_5" class="my_but">5</button>
+            <button id="btn_digit_6" class="my_but">6</button>
+            <button id="btn_op_minus" class="my_but primary">-</button>
+            <button id="btn_digit_1" class="my_but">1</button>
+            <button id="btn_digit_2" class="my_but">2</button>
+            <button id="btn_digit_3" class="my_but">3</button>
+            <button id="btn_op_plus" class="my_but primary">+</button>
+            <button id="btn_digit_0" class="my_but">0</button>
+            <button id="btn_digit_dot" class="my_but">.</button>
+            <button id="btn_op_equal" class="my_but primary execute">=</button>
+        </div>
+        <!-- Ссылка на GitHub -->
+        <div id="github-button">
+            <a href="https://github.com/EugeneTerminal" target="_blank" class="github-link">GitHub</a>
+        </div>
+    </div>
+    <!-- Блок с информацией об авторе -->
+    <details id="info">
+        <summary>Автор</summary>
+        <ul>
+            <li>ФИО: Марчев Евгений Евгеньевич</li>
+            <li>Группа: ИЭ-22</li>
+        </ul>
+    </details>
+    <!-- Блок выбора цели -->
+    <div class="dropdown">
+        <label for="purpose">Цель ЛР:</label>
+        <select id="purpose">
+            <option>Изучение HTML</option>
+            <option>Изучение CSS</option>
+            <option>Создание интерфейса</option>
+        </select>
+    </div>
+    <!-- Текст с описанием лабораторной работы -->
+    <div class="ans">
+        Лабораторная работа: <mark>знакомство</mark> с <mark>HTML</mark> и <mark>CSS</mark>.
+    </div>
+    <!-- Текст внизу страницы -->
+    <div class="footer-text">
+        ЛР выполнил Марчев Евгений ИЭ-22
+    </div>
+</body>
+</html>
