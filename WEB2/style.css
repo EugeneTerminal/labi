@@ -1,0 +1,151 @@
+/* Сброс стилей для body */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('9ad1a6fd72a5f3bccc953cb17c9585e4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    color: #f0f0f0;
+    position: relative;
+    text-align: center;
+}
+
+/* Центрирование калькулятора */
+.sloy {
+    background-color: #222222;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    margin: 100px auto 0;
+    width: 300px;
+}
+
+/* Поле вывода результата */
+#result {
+    background-color: #333333;
+    color: #ffffff;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px;
+    text-align: right;
+    overflow-x: auto;
+    white-space: nowrap;
+    max-width: 100%;
+    word-break: break-all;
+}
+
+/* Контейнер для кнопок */
+.calc {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Кнопки */
+.my_but {
+    background-color: #444444;
+    color: #ffffff;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    height: 60px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.my_but:hover {
+    background-color: #868686;
+    color: #ffffff;
+}   
+
+/* Кнопка = и другие специальные */
+.execute {
+    grid-column: span 1;
+}
+
+.primary {
+    background-color: #0011ff;
+}
+
+.secondary {
+    background-color: #0011ff;
+}
+
+/* Текст внизу страницы */
+.footer-text {
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/* GitHub-ссылка */
+.github-link {
+    font-size: 16px;
+    color: #0011ff;
+    text-decoration: none;
+}
+
+.github-link:hover {
+    color: #ffffff;
+}
+
+/* Тёмная тема */
+body.dark-theme {
+    background-color: #121212;
+    background-image: url('i.webp');
+    color: #ffffff;
+}
+
+body.dark-theme .sloy {
+    background-color: #ffffff;
+}
+
+body.dark-theme .footer-text {
+    color: #000000;
+}
+
+body.dark-theme .my_but {
+    background-color: #fafafa;
+    color: #000000;
+}
+
+body.dark-theme #result {
+    background-color: #fafafa;
+    color: rgb(0, 0, 0);
+}
+
+body.dark-theme .my_but:hover {
+    background-color: #595959;
+    color: #ffffff;
+}
+
+/* Тёмная тема: общий стиль для текста */
+.dark-theme .dark-toggle {
+    color: #000000;
+}
+
+/* Для выделения mark в тёмной теме */
+.dark-theme .dark-toggle mark {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Для выпадающего списка */
+.dark-theme .dark-toggle select {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Для summary (детали) */
+.dark-theme .dark-toggle summary {
+    color: #000000;
+}
